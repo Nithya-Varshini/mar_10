@@ -1,0 +1,1020 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="618.6666666666666,2466.6666666666665" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="68">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="53">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="628.6666666666666,2402" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="f9e519f4-f0ee-4da3-aecc-b8012aad2646" DisplayName="CV Screen Scope 'Chrome_RenderWidgetHost...'" sap:VirtualizedContainerService.HintSize="566.6666666666666,2291.3333333333335" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V5">
+      <p:CVScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="n_page" />
+              <Variable x:TypeArguments="x:Double" Name="r" />
+              <Variable x:TypeArguments="x:Double" Name="n" />
+              <Variable x:TypeArguments="x:String" Name="l" />
+            </Sequence.Variables>
+            <p:CvGetTextWithDescriptor DelayScreenshotAfterScroll="{x:Null}" Descriptor="[&quot;Target: AnyText (115,15,14,10)&quot; +&#xD;&#xA;&quot;Anchor: Text 'of' (101,14,12,11)&quot; +&#xD;&#xA;&quot;Anchor: InputBox (50,2,43,34)&quot;]" DesignTimeCacheId="f9e519f4-f0ee-4da3-aecc-b8012aad2646" DesignTimeScaleFactor="1.5" DisplayName="CV Get Text - Any Text" sap:VirtualizedContainerService.HintSize="532.6666666666666,226" sap2010:WorkflowViewState.IdRef="CvGetTextWithDescriptor_1" InformativeScreenshot="6b4eee4dca24d026543a28650b1ddd2f" NumberOfScrolls="2" RefreshBefore="True" Result="[n_page]" ScrollDirection="None" Version="V5">
+              <p:CvGetTextWithDescriptor.DesignTimeDescriptor>
+                <uc:CvDescriptor Id="d3ba47cb-c46c-4e37-9278-411ae038dee7">
+                  <uc:CvDescriptor.Anchors>
+                    <x:Array Type="uc:CvElementDescriptor">
+                      <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="101, 14, 12, 11" ElementType="Text" Text="of" />
+                      <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="50, 2, 43, 34" ElementType="InputBox" />
+                    </x:Array>
+                  </uc:CvDescriptor.Anchors>
+                  <uc:CvDescriptor.Target>
+                    <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="115, 15, 14, 10" ElementType="AnyText" />
+                  </uc:CvDescriptor.Target>
+                </uc:CvDescriptor>
+              </p:CvGetTextWithDescriptor.DesignTimeDescriptor>
+            </p:CvGetTextWithDescriptor>
+            <Assign sap:VirtualizedContainerService.HintSize="532.6666666666666,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Double">[r]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Double">[Convert.ToDouble(n_page)-25]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="532.6666666666666,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Double">[n]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Double">1</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="532.6666666666666,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[l]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[1.ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="532.6666666666666,1377.3333333333333" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,1206.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="sd2:DataTable" Name="t" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <p:CvExtractDataTableWithDescriptor InRegion="{x:Null}" AddHeaders="True" DelayScreenshotAfterScroll="250" Descriptor="[&quot;Target: Table (370,119,474,223)&quot; +&#xD;&#xA;&quot;Anchor: Image (376,168,467,173)&quot;]" DesignTimeCacheId="f9e519f4-f0ee-4da3-aecc-b8012aad2646" DesignTimeScaleFactor="1.5" DisplayName="CV Extract Table - Table" sap:VirtualizedContainerService.HintSize="434,194" sap2010:WorkflowViewState.IdRef="CvExtractDataTableWithDescriptor_1" IgnoreEmptyRows="False" InformativeScreenshot="f2c5a48753bde83647c9c08f8c35e114" MaxTableScrollHeightInPixels="30000" NumberOfScrolls="2" RefreshBefore="True" Result="[t]" Scroll="False" ScrollDirection="None" Version="V5">
+                    <p:CvExtractDataTableWithDescriptor.DesignTimeDescriptor>
+                      <uc:CvDescriptor Id="2344e6d7-c775-4c16-a549-307da8850fea">
+                        <uc:CvDescriptor.Anchors>
+                          <x:Array Type="uc:CvElementDescriptor">
+                            <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="376, 168, 467, 173" ElementType="Image" ImageBase64="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" />
+                          </x:Array>
+                        </uc:CvDescriptor.Anchors>
+                        <uc:CvDescriptor.Target>
+                          <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="370, 119, 474, 223" ElementType="Table" />
+                        </uc:CvDescriptor.Target>
+                      </uc:CvDescriptor>
+                    </p:CvExtractDataTableWithDescriptor.DesignTimeDescriptor>
+                  </p:CvExtractDataTableWithDescriptor>
+                  <ui:WriteRange AddHeaders="False" DataTable="[t]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="sheet1" StartingCell="[&quot;A&quot;+l]" WorkbookPath="C:\Users\hp\OneDrive\Documents\Book1.xlsx" />
+                  <p:CvGetTextWithDescriptor DelayScreenshotAfterScroll="{x:Null}" Descriptor="[&quot;Target: AnyWordGroup (396,333,7,6)&quot; +&#xD;&#xA;&quot;Anchor: Text ''PASS' - Pass.' (486,359,40,6)&quot;]" DesignTimeCacheId="f9e519f4-f0ee-4da3-aecc-b8012aad2646" DesignTimeScaleFactor="1.5" DisplayName="CV Get Text - Any Word Group" sap:VirtualizedContainerService.HintSize="434,226" sap2010:WorkflowViewState.IdRef="CvGetTextWithDescriptor_2" InformativeScreenshot="3b2d53f25aa0690aec84260d7c3709d7" NumberOfScrolls="2" RefreshBefore="True" Result="[l]" ScrollDirection="None" Version="V5">
+                    <p:CvGetTextWithDescriptor.DesignTimeDescriptor>
+                      <uc:CvDescriptor Id="4ee67dfb-e515-4643-9956-5aca0fc66a29">
+                        <uc:CvDescriptor.Anchors>
+                          <x:Array Type="uc:CvElementDescriptor">
+                            <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="486, 359, 40, 6" ElementType="Text" Text="'PASS' - Pass." />
+                          </x:Array>
+                        </uc:CvDescriptor.Anchors>
+                        <uc:CvDescriptor.Target>
+                          <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="396, 333, 7, 6" ElementType="AnyWordGroup" />
+                        </uc:CvDescriptor.Target>
+                      </uc:CvDescriptor>
+                    </p:CvGetTextWithDescriptor.DesignTimeDescriptor>
+                  </p:CvGetTextWithDescriptor>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[l]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[(Convert.ToDouble(l)+3).ToString]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <p:CvTypeIntoWithDescriptor DelayScreenshotAfterScroll="{x:Null}" DeselectAfter="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: InputBox (50,2,43,34)&quot; +&#xD;&#xA;&quot;Anchor: Icon (12,10,22,18)&quot;]" DesignTimeCacheId="f9e519f4-f0ee-4da3-aecc-b8012aad2646" DesignTimeScaleFactor="1.5" DisplayName="CV Type Into - InputBox" EmptyField="True" sap:VirtualizedContainerService.HintSize="434,189.33333333333334" sap2010:WorkflowViewState.IdRef="CvTypeIntoWithDescriptor_1" InformativeScreenshot="2126e807bd7ea9d498066843134d56ce" NumberOfScrolls="2" ScrollDirection="None" Text="[n.ToString]" Version="V5">
+                    <p:CvTypeIntoWithDescriptor.DesignTimeDescriptor>
+                      <uc:CvDescriptor Id="7f0e94e8-0b6d-448a-b73e-be804375777a">
+                        <uc:CvDescriptor.Anchors>
+                          <x:Array Type="uc:CvElementDescriptor">
+                            <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="12, 10, 22, 18" ElementType="Icon" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAbCAYAAADyBeakAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACnSURBVEhL7ZPNCQQhDEa3GnuxBYsSBBuwFMvRkzePWeIQcAYD8+PM7EIOj2DE+BC/T60V3kYkCJEgRIJgJVJKEGNsdbQ/E1ZCaw1KqVb7fggBrLWX8N6vZg4lSilNgMA19nPOq/4VcBbdx76Ecw6MMa32/f7wWbYzfvtjPgkrIelAJB1v8Z8Sd6TmsASXGvzxoySM2JUOjpmp2ZUOjhmpkXRwiMRChS/o25/WEAdrigAAAABJRU5ErkJggg==" />
+                          </x:Array>
+                        </uc:CvDescriptor.Anchors>
+                        <uc:CvDescriptor.Target>
+                          <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="50, 2, 43, 34" ElementType="InputBox" />
+                        </uc:CvDescriptor.Target>
+                      </uc:CvDescriptor>
+                    </p:CvTypeIntoWithDescriptor.DesignTimeDescriptor>
+                    <p:CvTypeIntoWithDescriptor.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="4692ef97-c94f-4a13-9c04-0b3d938f08a9">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </p:CvTypeIntoWithDescriptor.Target>
+                  </p:CvTypeIntoWithDescriptor>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Double">[n]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Double">[n+1]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+              <ui:InterruptibleWhile.Condition>
+                <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="n&lt;=r" />
+              </ui:InterruptibleWhile.Condition>
+            </ui:InterruptibleWhile>
+          </Sequence>
+        </ActivityAction>
+      </p:CVScope.Body>
+      <p:CVScope.DesignTimeCacheContainer>
+        <uc:CvCacheContainer>
+          <uc:CvCacheContainer.Caches>
+            <scg:List x:TypeArguments="uc:CVCache" Capacity="2">
+              <uc:CVCache DataSent="False" DisplayName="Screen CV Get Text - '' (Main)" Id="f9e519f4-f0ee-4da3-aecc-b8012aad2646" InformativeScreenshot="cfacebad24232c7c6364a4a235ce99ca" LogicalPosition="0, 154" OcrText="1 of 28 + o T v v St. Joseph's College of Engineering ( An Autonomous Institution) 1B Xw REGULATION NAME: R-2021 Program B.Tech. Information Technology Nov-2022 SEMESTER EXAMINATION Ne CS1301 MA1351 CS1302 CS1304 CS1305 IT1301 Digital Principles and Probabiity and Computer S.No. Reg.No. Name Logic Design( Data Structures Software Engineering Java Programming Integrated) Staltistics Architecture Components Grade Result Grade Result Grade Result Grade Result Grade Result Grade Result 1 312321205001 AADITHYAJE A PASS A PASS B+ PASS B+ PASS Be PASS B+ PASS 2 312321205002 AADITHYAAE A PASS A# PASS A PASS A PASS A PASS A PASS 3 312321205003 AAKASHC A PASS A PASS B+ PASS B+ PASS A PASS B+ PASS 4 312321205004 AASIGAR A+ PASS A PASS A+ PASS A PASS A PASS A PASS 5 312321205005 ABISHEKJ A PASS B+ PASS A PASS A PASS B+ PASS B+ PASS 6 312321205006 ABISHEK B B+ PASS B PASS B+ PASS B+ PASS U RA U RA 7 312321205007 ADHAMA B PASS U RA U RA U RA U RA U RA PRAKASH S 8 312321205008 ADITYAK A PASS B+ PASS A PASS A PASS A PASS A PASS 9 312321205009 ADITYAAA U RA U RA B PASS U RA U RA U RA 10 312321205010 AGILAN S U RA U RA U RA C PASS U RA U RA 11 312321205011 AISHWARYAB A PASS B+ PASS A PASS A PASS A PASS B+ PASS 12 312321205013 AISHWARYAN B+ PASS U RA B+ PASS B+ PASS A PASS B+ PASS 13 312321205014 AKASH RAJ R B+ PASS U RA B PASS B+ PASS B+ PASS B+ PASS 14 312321205015 ALDO XAVIER O A PASS B+ PASS A PASS A PASS A PASS A PASS 15 312321205016 ANISH S A PASS Be PASS A PASS A+ PASS Ae PASS A PASS 'PASS' - Pass. RRA' - Reappearance needed to pass &quot;AB&quot; - Absent, 'NR . Not Registered. Date:21-Jan-2023 Chairman Central Valuation Board Controller of Examinatlions Chairperson 00 St. Joseph's College of Engineering ( An Autonomous Institution) 1oa REGULATION NAME: R-2021 Program: B.Tech. Information Technology Nov-2022 SEMESTER EXAMINATION Plox T CS1301 MA1351 CS1302 CS1304 CS1305 IT1301 Digital Principles and Probablity and Computer Soltware S.No. Reg.No. Name Logic Design(La Data Structures Java Programming Integrated) Stalistios Architecture Engineering" Position="0, 154" ScaleFactor="1.5" ScreenshotGuid="892d8748-69dc-4732-84e9-33570a47dea3" ServerVersion="1">
+                <uc:CVCache.CvAnchorRelations>
+                  <scg:List x:TypeArguments="uc:AnchorRelationInfo" Capacity="4">
+                    <uc:AnchorRelationInfo IsTargetText="True" Target="341">
+                      <uc:AnchorRelationInfo.Anchors>
+                        <x:Array Type="x:Int32">
+                          <x:Int32>339</x:Int32>
+                          <x:Int32>340</x:Int32>
+                        </x:Array>
+                      </uc:AnchorRelationInfo.Anchors>
+                    </uc:AnchorRelationInfo>
+                    <uc:AnchorRelationInfo IsTargetText="True" Target="21">
+                      <uc:AnchorRelationInfo.Anchors>
+                        <x:Array Type="x:Int32">
+                          <x:Int32>19</x:Int32>
+                          <x:Int32>20</x:Int32>
+                        </x:Array>
+                      </uc:AnchorRelationInfo.Anchors>
+                    </uc:AnchorRelationInfo>
+                  </scg:List>
+                </uc:CVCache.CvAnchorRelations>
+                <uc:CVCache.CvTables>
+                  <x:Array Type="uc:CvTableInfo">
+                    <uc:CvTableInfo>
+                      <uc:CvTableInfo.Columns>
+                        <x:Array Type="x:Int32">
+                          <x:Int32>370</x:Int32>
+                          <x:Int32>426</x:Int32>
+                          <x:Int32>468</x:Int32>
+                          <x:Int32>516</x:Int32>
+                          <x:Int32>570</x:Int32>
+                          <x:Int32>571</x:Int32>
+                          <x:Int32>624</x:Int32>
+                          <x:Int32>679</x:Int32>
+                          <x:Int32>703</x:Int32>
+                          <x:Int32>733</x:Int32>
+                          <x:Int32>786</x:Int32>
+                          <x:Int32>812</x:Int32>
+                          <x:Int32>844</x:Int32>
+                        </x:Array>
+                      </uc:CvTableInfo.Columns>
+                      <uc:CvTableInfo.Rows>
+                        <x:Array Type="x:Int32">
+                          <x:Int32>119</x:Int32>
+                          <x:Int32>130</x:Int32>
+                          <x:Int32>154</x:Int32>
+                          <x:Int32>164</x:Int32>
+                          <x:Int32>176</x:Int32>
+                          <x:Int32>187</x:Int32>
+                          <x:Int32>198</x:Int32>
+                          <x:Int32>210</x:Int32>
+                          <x:Int32>222</x:Int32>
+                          <x:Int32>233</x:Int32>
+                          <x:Int32>250</x:Int32>
+                          <x:Int32>261</x:Int32>
+                          <x:Int32>272</x:Int32>
+                          <x:Int32>284</x:Int32>
+                          <x:Int32>296</x:Int32>
+                          <x:Int32>306</x:Int32>
+                          <x:Int32>318</x:Int32>
+                          <x:Int32>329</x:Int32>
+                          <x:Int32>342</x:Int32>
+                        </x:Array>
+                      </uc:CvTableInfo.Rows>
+                    </uc:CvTableInfo>
+                    <uc:CvTableInfo>
+                      <uc:CvTableInfo.Columns>
+                        <x:Array Type="x:Int32">
+                          <x:Int32>371</x:Int32>
+                          <x:Int32>426</x:Int32>
+                          <x:Int32>467</x:Int32>
+                          <x:Int32>528</x:Int32>
+                          <x:Int32>580</x:Int32>
+                          <x:Int32>633</x:Int32>
+                          <x:Int32>685</x:Int32>
+                          <x:Int32>739</x:Int32>
+                          <x:Int32>788</x:Int32>
+                          <x:Int32>843</x:Int32>
+                        </x:Array>
+                      </uc:CvTableInfo.Columns>
+                      <uc:CvTableInfo.Rows>
+                        <x:Array Type="x:Int32">
+                          <x:Int32>528</x:Int32>
+                          <x:Int32>540</x:Int32>
+                          <x:Int32>564</x:Int32>
+                          <x:Int32>568</x:Int32>
+                        </x:Array>
+                      </uc:CvTableInfo.Rows>
+                    </uc:CvTableInfo>
+                  </x:Array>
+                </uc:CVCache.CvTables>
+                <uc:CVCache.CvUiElements>
+                  <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="512">
+                    <uc:CvElementInfo Category="Icon" Region="896, 9, 20, 22" />
+                    <uc:CvElementInfo Category="Icon" Region="1013, 10, 20, 19" />
+                    <uc:CvElementInfo Category="Icon" Region="1054, 10, 19, 19" />
+                    <uc:CvElementInfo Category="Icon" Region="12, 10, 22, 18" />
+                    <uc:CvElementInfo Category="Icon" Region="779, 10, 20, 18" />
+                    <uc:CvElementInfo Category="Icon" Region="827, 9, 21, 21" />
+                    <uc:CvElementInfo Category="Icon" Region="1181, 8, 21, 22" />
+                    <uc:CvElementInfo Category="Icon" Region="591, 10, 20, 20" />
+                    <uc:CvElementInfo Category="Icon" Region="1094, 10, 20, 20" />
+                    <uc:CvElementInfo Category="Icon" Region="964, 9, 21, 21" />
+                    <uc:CvElementInfo Category="Icon" Region="632, 12, 20, 16" />
+                    <uc:CvElementInfo Category="Icon" Region="146, 10, 20, 19" />
+                    <uc:CvElementInfo Category="Icon" Region="680, 11, 21, 18" />
+                    <uc:CvElementInfo Category="Icon" Region="1142, 9, 21, 20" />
+                    <uc:CvElementInfo Category="Icon" Region="730, 9, 20, 20" />
+                    <uc:CvElementInfo Category="Icon" Region="552, 10, 20, 19" />
+                    <uc:CvElementInfo Category="ArrowButton" Region="1215, 0, 18, 18" />
+                    <uc:CvElementInfo Category="ArrowButton" Region="932, 13, 16, 16" />
+                    <uc:CvElementInfo Category="ArrowButton" Region="864, 12, 16, 16" />
+                    <uc:CvElementInfo Category="ArrowButton" Region="1216, 553, 16, 16" />
+                    <uc:CvElementInfo Category="InputBox" Region="50, 2, 43, 34" />
+                    <uc:CvElementInfo Category="Button" Region="427, 541, 42, 24" />
+                    <uc:CvElementInfo Category="MinimizeButton" Region="511, 11, 22, 16" />
+                    <uc:CvElementInfo Category="Button" Region="372, 541, 56, 24" />
+                    <uc:CvElementInfo Category="Cell" Region="679, 329, 24, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="812, 261, 32, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="370, 250, 56, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="370, 329, 56, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="370, 318, 56, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="370, 222, 56, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="703, 261, 30, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="370, 296, 56, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="703, 329, 30, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="370, 210, 56, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="370, 233, 56, 16" />
+                    <uc:CvElementInfo Category="Cell" Region="786, 329, 25, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="370, 198, 56, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="370, 187, 56, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="812, 222, 32, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="516, 329, 54, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="468, 329, 48, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="685, 528, 54, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="468, 250, 48, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="468, 284, 48, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="571, 329, 53, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="468, 296, 48, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="679, 222, 24, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="733, 187, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="703, 176, 30, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="733, 176, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="370, 261, 56, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="370, 306, 56, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="812, 329, 32, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="468, 233, 48, 16" />
+                    <uc:CvElementInfo Category="Cell" Region="788, 528, 54, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="370, 284, 56, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="786, 198, 25, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="812, 272, 32, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="468, 261, 48, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="370, 176, 56, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="624, 329, 54, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="624, 176, 54, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="812, 176, 32, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="426, 318, 42, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="580, 528, 52, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="624, 261, 54, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="528, 528, 52, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="703, 318, 30, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="426, 329, 42, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="786, 250, 25, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="370, 272, 56, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="571, 187, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="812, 233, 32, 16" />
+                    <uc:CvElementInfo Category="Cell" Region="679, 296, 24, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="733, 329, 53, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="468, 272, 48, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="812, 284, 32, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="679, 187, 24, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="812, 198, 32, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="679, 261, 24, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="812, 187, 32, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="468, 210, 48, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="570, 284, 0, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="570, 222, 0, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="733, 306, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="516, 272, 55, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="812, 296, 32, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="733, 210, 53, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="786, 210, 25, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="733, 198, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="733, 284, 53, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="426, 306, 42, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="468, 306, 48, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="570, 296, 0, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="468, 318, 48, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="570, 187, 0, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="733, 296, 53, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="786, 222, 25, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="733, 164, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="516, 261, 55, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="812, 306, 32, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="733, 261, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="812, 164, 32, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="570, 210, 0, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="570, 198, 0, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="733, 272, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="570, 306, 0, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="679, 306, 24, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="812, 250, 32, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="679, 272, 24, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="679, 210, 24, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="468, 176, 48, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="739, 528, 49, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="370, 164, 56, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="571, 176, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="426, 284, 42, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="679, 318, 24, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="679, 164, 24, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="516, 187, 55, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="786, 261, 25, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="786, 296, 25, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="570, 250, 0, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="786, 284, 25, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="571, 272, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="703, 222, 30, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="812, 210, 32, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="571, 261, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="468, 198, 48, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="468, 222, 48, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="703, 284, 30, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="624, 187, 54, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="516, 284, 54, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="679, 250, 24, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="703, 164, 30, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="786, 119, 57, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="516, 306, 54, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="786, 187, 25, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="786, 176, 25, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="812, 318, 32, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="426, 296, 42, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="571, 318, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="624, 272, 54, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="571, 198, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="679, 119, 54, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="703, 233, 30, 16" />
+                    <uc:CvElementInfo Category="Cell" Region="516, 198, 54, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="570, 318, 0, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="703, 272, 30, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="733, 222, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="703, 296, 30, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="516, 176, 55, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="571, 296, 53, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="624, 233, 54, 16" />
+                    <uc:CvElementInfo Category="Cell" Region="703, 306, 30, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="468, 187, 48, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="679, 284, 24, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="516, 222, 54, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="516, 296, 54, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="703, 250, 30, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="703, 187, 30, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="516, 318, 55, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="786, 306, 25, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="426, 233, 42, 16" />
+                    <uc:CvElementInfo Category="Cell" Region="426, 272, 42, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="624, 198, 54, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="624, 318, 54, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="679, 198, 24, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="786, 272, 25, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="570, 233, 0, 16" />
+                    <uc:CvElementInfo Category="Cell" Region="571, 306, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="786, 318, 25, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="426, 187, 42, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="703, 198, 30, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="624, 296, 54, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="733, 318, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="733, 250, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="624, 222, 54, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="370, 130, 56, 24" />
+                    <uc:CvElementInfo Category="Cell" Region="624, 250, 54, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="624, 306, 54, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="571, 250, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="571, 233, 53, 16" />
+                    <uc:CvElementInfo Category="Cell" Region="516, 233, 54, 16" />
+                    <uc:CvElementInfo Category="Cell" Region="679, 176, 24, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="633, 528, 52, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="624, 164, 54, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="571, 284, 53, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="733, 119, 53, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="624, 284, 54, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="703, 210, 30, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="571, 222, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="426, 222, 42, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="624, 119, 54, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="516, 210, 54, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="786, 164, 25, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="788, 540, 54, 24" />
+                    <uc:CvElementInfo Category="Cell" Region="516, 164, 54, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="516, 250, 54, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="624, 210, 54, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="516, 119, 54, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="571, 210, 53, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="426, 261, 42, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="786, 233, 25, 16" />
+                    <uc:CvElementInfo Category="Cell" Region="426, 176, 42, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="468, 164, 48, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="679, 233, 24, 16" />
+                    <uc:CvElementInfo Category="Cell" Region="679, 130, 54, 24" />
+                    <uc:CvElementInfo Category="Cell" Region="733, 233, 53, 16" />
+                    <uc:CvElementInfo Category="Cell" Region="426, 250, 42, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="426, 198, 42, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="468, 154, 48, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="733, 130, 53, 24" />
+                    <uc:CvElementInfo Category="Cell" Region="571, 164, 53, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="570, 119, 54, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="739, 540, 49, 24" />
+                    <uc:CvElementInfo Category="Cell" Region="580, 540, 52, 24" />
+                    <uc:CvElementInfo Category="Cell" Region="426, 210, 42, 12" />
+                    <uc:CvElementInfo Category="Cell" Region="426, 130, 42, 24" />
+                    <uc:CvElementInfo Category="Cell" Region="786, 130, 57, 24" />
+                    <uc:CvElementInfo Category="Cell" Region="812, 154, 32, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="624, 130, 54, 24" />
+                    <uc:CvElementInfo Category="Cell" Region="679, 154, 24, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="516, 130, 55, 24" />
+                    <uc:CvElementInfo Category="Cell" Region="633, 540, 52, 24" />
+                    <uc:CvElementInfo Category="Cell" Region="570, 130, 54, 24" />
+                    <uc:CvElementInfo Category="Cell" Region="733, 154, 53, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="468, 130, 48, 24" />
+                    <uc:CvElementInfo Category="Cell" Region="528, 540, 52, 24" />
+                    <uc:CvElementInfo Category="Cell" Region="685, 540, 54, 24" />
+                    <uc:CvElementInfo Category="Cell" Region="786, 154, 25, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="426, 164, 42, 11" />
+                    <uc:CvElementInfo Category="Cell" Region="703, 154, 30, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="788, 564, 54, 3" />
+                    <uc:CvElementInfo Category="Cell" Region="624, 154, 54, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="528, 564, 52, 3" />
+                    <uc:CvElementInfo Category="Cell" Region="516, 154, 54, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="571, 154, 53, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="580, 564, 52, 3" />
+                    <uc:CvElementInfo Category="Cell" Region="370, 154, 56, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="685, 564, 54, 3" />
+                    <uc:CvElementInfo Category="Cell" Region="426, 154, 42, 10" />
+                    <uc:CvElementInfo Category="Cell" Region="739, 564, 49, 3" />
+                    <uc:CvElementInfo Category="Cell" Region="467, 540, 61, 24" />
+                    <uc:CvElementInfo Category="Cell" Region="633, 564, 52, 3" />
+                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="404, 64, 52, 50" />
+                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="403, 475, 52, 50" />
+                    <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="50, 3, 43, 34" />
+                    <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="734, 154, 24, 12" />
+                    <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="788, 154, 26, 12" />
+                    <uc:CvElementInfo Category="InputBox" Confidence="Runtime" Region="371, 530, 158, 10" />
+                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="510, 11, 22, 15" />
+                    <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="517, 154, 24, 12" />
+                    <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="572, 154, 24, 12" />
+                    <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="426, 131, 42, 24" />
+                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="797, 322, 7, 6" />
+                    <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="813, 154, 30, 12" />
+                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="50, 2, 42, 35" />
+                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="60, 10, 20, 20" />
+                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="467, 564, 61, 3" />
+                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="371, 564, 55, 3" />
+                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="426, 528, 102, 12" />
+                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="371, 540, 55, 24" />
+                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="468, 119, 48, 10" />
+                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="516, 341, 24, 18" />
+                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="370, 119, 146, 10" />
+                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="625, 341, 22, 17" />
+                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="649, 340, 28, 19" />
+                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="571, 340, 23, 16" />
+                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="426, 540, 40, 24" />
+                  </scg:List>
+                </uc:CVCache.CvUiElements>
+                <uc:CVCache.OcrTexts>
+                  <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="377">
+                    <uc:OcrTextInfo Region="68, 15, 6, 10" Text="1" />
+                    <uc:OcrTextInfo Region="101, 14, 12, 11" Text="of" />
+                    <uc:OcrTextInfo Region="115, 15, 14, 10" Text="28" />
+                    <uc:OcrTextInfo Region="553, 12, 17, 16" Text="+" />
+                    <uc:OcrTextInfo Region="599, 17, 5, 5" Text="o" />
+                    <uc:OcrTextInfo Region="786, 14, 7, 11" Text="T" />
+                    <uc:OcrTextInfo Region="867, 18, 9, 6" Text="v" />
+                    <uc:OcrTextInfo Region="935, 18, 10, 6" Text="v" />
+                    <uc:OcrTextInfo Region="509, 82, 11, 8" Text="St." />
+                    <uc:OcrTextInfo Region="521, 82, 35, 9" Text="Joseph's" />
+                    <uc:OcrTextInfo Region="558, 82, 29, 9" Text="College" />
+                    <uc:OcrTextInfo Region="588, 82, 8, 8" Text="of" />
+                    <uc:OcrTextInfo Region="598, 82, 46, 10" Text="Engineering" />
+                    <uc:OcrTextInfo Region="646, 82, 4, 8" Text="(" />
+                    <uc:OcrTextInfo Region="650, 82, 12, 8" Text="An" />
+                    <uc:OcrTextInfo Region="662, 82, 50, 8" Text="Autonomous" />
+                    <uc:OcrTextInfo Region="714, 82, 42, 9" Text="Institution)" />
+                    <uc:OcrTextInfo Region="420, 91, 8, 6" Text="1B" />
+                    <uc:OcrTextInfo Region="415, 104, 24, 4" Text="Xw" />
+                    <uc:OcrTextInfo Region="458, 100, 36, 6" Text="REGULATION" />
+                    <uc:OcrTextInfo Region="494, 100, 18, 6" Text="NAME:" />
+                    <uc:OcrTextInfo Region="514, 100, 18, 6" Text="R-2021" />
+                    <uc:OcrTextInfo Region="569, 100, 22, 7" Text="Program" />
+                    <uc:OcrTextInfo Region="594, 100, 18, 6" Text="B.Tech." />
+                    <uc:OcrTextInfo Region="613, 100, 28, 6" Text="Information" />
+                    <uc:OcrTextInfo Region="642, 100, 28, 7" Text="Technology" />
+                    <uc:OcrTextInfo Region="704, 100, 24, 6" Text="Nov-2022" />
+                    <uc:OcrTextInfo Region="730, 100, 31, 6" Text="SEMESTER" />
+                    <uc:OcrTextInfo Region="762, 100, 38, 6" Text="EXAMINATION" />
+                    <uc:OcrTextInfo Region="432, 110, 6, 4" Text="Ne" />
+                    <uc:OcrTextInfo Region="534, 122, 20, 6" Text="CS1301" />
+                    <uc:OcrTextInfo Region="588, 122, 20, 6" Text="MA1351" />
+                    <uc:OcrTextInfo Region="642, 122, 21, 6" Text="CS1302" />
+                    <uc:OcrTextInfo Region="697, 122, 20, 6" Text="CS1304" />
+                    <uc:OcrTextInfo Region="751, 122, 20, 6" Text="CS1305" />
+                    <uc:OcrTextInfo Region="806, 122, 18, 6" Text="IT1301" />
+                    <uc:OcrTextInfo Region="518, 134, 16, 6" Text="Digital" />
+                    <uc:OcrTextInfo Region="535, 134, 25, 6" Text="Principles" />
+                    <uc:OcrTextInfo Region="560, 135, 10, 4" Text="and" />
+                    <uc:OcrTextInfo Region="580, 137, 26, 6" Text="Probabiity" />
+                    <uc:OcrTextInfo Region="607, 137, 10, 4" Text="and" />
+                    <uc:OcrTextInfo Region="695, 137, 24, 6" Text="Computer" />
+                    <uc:OcrTextInfo Region="391, 140, 14, 6" Text="S.No." />
+                    <uc:OcrTextInfo Region="438, 140, 20, 6" Text="Reg.No." />
+                    <uc:OcrTextInfo Region="485, 140, 16, 4" Text="Name" />
+                    <uc:OcrTextInfo Region="523, 140, 14, 5" Text="Logic" />
+                    <uc:OcrTextInfo Region="538, 140, 19, 6" Text="Design(" />
+                    <uc:OcrTextInfo Region="634, 140, 12, 5" Text="Data" />
+                    <uc:OcrTextInfo Region="647, 140, 25, 5" Text="Structures" />
+                    <uc:OcrTextInfo Region="735, 140, 22, 6" Text="Software" />
+                    <uc:OcrTextInfo Region="758, 140, 30, 6" Text="Engineering" />
+                    <uc:OcrTextInfo Region="792, 140, 12, 5" Text="Java" />
+                    <uc:OcrTextInfo Region="806, 140, 33, 6" Text="Programming" />
+                    <uc:OcrTextInfo Region="531, 146, 27, 6" Text="Integrated)" />
+                    <uc:OcrTextInfo Region="588, 143, 22, 4" Text="Staltistics" />
+                    <uc:OcrTextInfo Region="692, 143, 30, 4" Text="Architecture" />
+                    <uc:OcrTextInfo Region="484, 157, 32, 6" Text="Components" />
+                    <uc:OcrTextInfo Region="521, 157, 16, 6" Text="Grade" />
+                    <uc:OcrTextInfo Region="548, 157, 16, 5" Text="Result" />
+                    <uc:OcrTextInfo Region="576, 158, 16, 4" Text="Grade" />
+                    <uc:OcrTextInfo Region="603, 157, 16, 6" Text="Result" />
+                    <uc:OcrTextInfo Region="630, 157, 16, 6" Text="Grade" />
+                    <uc:OcrTextInfo Region="657, 157, 16, 5" Text="Result" />
+                    <uc:OcrTextInfo Region="684, 157, 16, 6" Text="Grade" />
+                    <uc:OcrTextInfo Region="712, 157, 16, 5" Text="Result" />
+                    <uc:OcrTextInfo Region="738, 157, 16, 6" Text="Grade" />
+                    <uc:OcrTextInfo Region="766, 157, 16, 5" Text="Result" />
+                    <uc:OcrTextInfo Region="792, 157, 16, 6" Text="Grade" />
+                    <uc:OcrTextInfo Region="820, 157, 16, 6" Text="Result" />
+                    <uc:OcrTextInfo Region="398, 168, 3, 6" Text="1" />
+                    <uc:OcrTextInfo Region="430, 168, 36, 6" Text="312321205001" />
+                    <uc:OcrTextInfo Region="474, 168, 36, 6" Text="AADITHYAJE" />
+                    <uc:OcrTextInfo Region="527, 168, 4, 6" Text="A" />
+                    <uc:OcrTextInfo Region="549, 168, 15, 5" Text="PASS" />
+                    <uc:OcrTextInfo Region="581, 168, 5, 6" Text="A" />
+                    <uc:OcrTextInfo Region="603, 168, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="634, 169, 8, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="658, 169, 14, 5" Text="PASS" />
+                    <uc:OcrTextInfo Region="688, 169, 7, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="712, 168, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="742, 169, 7, 4" Text="Be" />
+                    <uc:OcrTextInfo Region="766, 168, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="796, 168, 8, 5" Text="B+" />
+                    <uc:OcrTextInfo Region="820, 168, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="397, 180, 4, 5" Text="2" />
+                    <uc:OcrTextInfo Region="429, 180, 38, 6" Text="312321205002" />
+                    <uc:OcrTextInfo Region="474, 180, 36, 6" Text="AADITHYAAE" />
+                    <uc:OcrTextInfo Region="527, 180, 4, 5" Text="A" />
+                    <uc:OcrTextInfo Region="549, 180, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="580, 180, 7, 4" Text="A#" />
+                    <uc:OcrTextInfo Region="603, 180, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="635, 180, 5, 5" Text="A" />
+                    <uc:OcrTextInfo Region="658, 180, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="690, 180, 4, 5" Text="A" />
+                    <uc:OcrTextInfo Region="712, 180, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="744, 180, 5, 5" Text="A" />
+                    <uc:OcrTextInfo Region="766, 180, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="798, 180, 5, 5" Text="A" />
+                    <uc:OcrTextInfo Region="820, 180, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="397, 191, 4, 5" Text="3" />
+                    <uc:OcrTextInfo Region="429, 191, 38, 6" Text="312321205003" />
+                    <uc:OcrTextInfo Region="478, 191, 26, 6" Text="AAKASHC" />
+                    <uc:OcrTextInfo Region="527, 192, 4, 5" Text="A" />
+                    <uc:OcrTextInfo Region="549, 191, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="581, 192, 5, 5" Text="A" />
+                    <uc:OcrTextInfo Region="604, 191, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="634, 192, 8, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="658, 191, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="688, 192, 7, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="712, 191, 15, 5" Text="PASS" />
+                    <uc:OcrTextInfo Region="744, 192, 5, 5" Text="A" />
+                    <uc:OcrTextInfo Region="766, 191, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="796, 192, 8, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="820, 191, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="397, 203, 4, 4" Text="4" />
+                    <uc:OcrTextInfo Region="429, 202, 37, 6" Text="312321205004" />
+                    <uc:OcrTextInfo Region="480, 202, 26, 6" Text="AASIGAR" />
+                    <uc:OcrTextInfo Region="526, 203, 7, 4" Text="A+" />
+                    <uc:OcrTextInfo Region="549, 202, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="581, 203, 5, 5" Text="A" />
+                    <uc:OcrTextInfo Region="604, 202, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="634, 203, 8, 4" Text="A+" />
+                    <uc:OcrTextInfo Region="658, 202, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="690, 203, 4, 4" Text="A" />
+                    <uc:OcrTextInfo Region="712, 202, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="744, 203, 5, 5" Text="A" />
+                    <uc:OcrTextInfo Region="766, 202, 14, 5" Text="PASS" />
+                    <uc:OcrTextInfo Region="798, 203, 5, 5" Text="A" />
+                    <uc:OcrTextInfo Region="820, 202, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="397, 214, 4, 6" Text="5" />
+                    <uc:OcrTextInfo Region="429, 214, 38, 6" Text="312321205005" />
+                    <uc:OcrTextInfo Region="478, 214, 28, 6" Text="ABISHEKJ" />
+                    <uc:OcrTextInfo Region="527, 214, 5, 4" Text="A" />
+                    <uc:OcrTextInfo Region="549, 214, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="580, 214, 7, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="603, 214, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="635, 214, 5, 4" Text="A" />
+                    <uc:OcrTextInfo Region="658, 214, 15, 5" Text="PASS" />
+                    <uc:OcrTextInfo Region="690, 214, 5, 4" Text="A" />
+                    <uc:OcrTextInfo Region="712, 214, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="742, 214, 7, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="766, 214, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="797, 214, 7, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="820, 214, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="397, 226, 4, 4" Text="6" />
+                    <uc:OcrTextInfo Region="430, 225, 37, 6" Text="312321205006" />
+                    <uc:OcrTextInfo Region="478, 225, 26, 6" Text="ABISHEK" />
+                    <uc:OcrTextInfo Region="503, 225, 4, 5" Text="B" />
+                    <uc:OcrTextInfo Region="526, 226, 7, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="549, 225, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="581, 226, 4, 4" Text="B" />
+                    <uc:OcrTextInfo Region="603, 225, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="634, 226, 7, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="658, 225, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="688, 226, 7, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="712, 225, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="744, 226, 4, 4" Text="U" />
+                    <uc:OcrTextInfo Region="769, 226, 9, 5" Text="RA" />
+                    <uc:OcrTextInfo Region="798, 226, 4, 4" Text="U" />
+                    <uc:OcrTextInfo Region="824, 226, 8, 5" Text="RA" />
+                    <uc:OcrTextInfo Region="397, 239, 4, 6" Text="7" />
+                    <uc:OcrTextInfo Region="429, 239, 38, 6" Text="312321205007" />
+                    <uc:OcrTextInfo Region="482, 236, 22, 5" Text="ADHAMA" />
+                    <uc:OcrTextInfo Region="527, 240, 4, 4" Text="B" />
+                    <uc:OcrTextInfo Region="549, 239, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="581, 240, 4, 4" Text="U" />
+                    <uc:OcrTextInfo Region="606, 240, 8, 4" Text="RA" />
+                    <uc:OcrTextInfo Region="636, 240, 4, 4" Text="U" />
+                    <uc:OcrTextInfo Region="661, 239, 8, 5" Text="RA" />
+                    <uc:OcrTextInfo Region="690, 240, 4, 4" Text="U" />
+                    <uc:OcrTextInfo Region="715, 240, 8, 4" Text="RA" />
+                    <uc:OcrTextInfo Region="744, 240, 4, 4" Text="U" />
+                    <uc:OcrTextInfo Region="769, 239, 8, 5" Text="RA" />
+                    <uc:OcrTextInfo Region="798, 240, 4, 4" Text="U" />
+                    <uc:OcrTextInfo Region="824, 239, 8, 5" Text="RA" />
+                    <uc:OcrTextInfo Region="477, 242, 28, 6" Text="PRAKASH" />
+                    <uc:OcrTextInfo Region="504, 242, 4, 5" Text="S" />
+                    <uc:OcrTextInfo Region="397, 254, 4, 5" Text="8" />
+                    <uc:OcrTextInfo Region="429, 254, 38, 6" Text="312321205008" />
+                    <uc:OcrTextInfo Region="480, 254, 26, 6" Text="ADITYAK" />
+                    <uc:OcrTextInfo Region="527, 254, 4, 5" Text="A" />
+                    <uc:OcrTextInfo Region="549, 254, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="580, 254, 7, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="603, 254, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="635, 254, 5, 4" Text="A" />
+                    <uc:OcrTextInfo Region="658, 254, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="690, 254, 5, 4" Text="A" />
+                    <uc:OcrTextInfo Region="712, 254, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="744, 254, 5, 6" Text="A" />
+                    <uc:OcrTextInfo Region="766, 254, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="798, 254, 5, 5" Text="A" />
+                    <uc:OcrTextInfo Region="820, 254, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="397, 266, 4, 4" Text="9" />
+                    <uc:OcrTextInfo Region="429, 265, 38, 6" Text="312321205009" />
+                    <uc:OcrTextInfo Region="478, 265, 29, 6" Text="ADITYAAA" />
+                    <uc:OcrTextInfo Region="527, 266, 4, 4" Text="U" />
+                    <uc:OcrTextInfo Region="552, 265, 8, 5" Text="RA" />
+                    <uc:OcrTextInfo Region="581, 266, 4, 4" Text="U" />
+                    <uc:OcrTextInfo Region="606, 265, 8, 6" Text="RA" />
+                    <uc:OcrTextInfo Region="636, 266, 4, 4" Text="B" />
+                    <uc:OcrTextInfo Region="658, 265, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="690, 266, 4, 4" Text="U" />
+                    <uc:OcrTextInfo Region="715, 265, 8, 5" Text="RA" />
+                    <uc:OcrTextInfo Region="744, 266, 4, 4" Text="U" />
+                    <uc:OcrTextInfo Region="769, 265, 9, 6" Text="RA" />
+                    <uc:OcrTextInfo Region="798, 266, 4, 4" Text="U" />
+                    <uc:OcrTextInfo Region="824, 266, 8, 5" Text="RA" />
+                    <uc:OcrTextInfo Region="396, 276, 6, 5" Text="10" />
+                    <uc:OcrTextInfo Region="429, 276, 38, 6" Text="312321205010" />
+                    <uc:OcrTextInfo Region="480, 276, 21, 6" Text="AGILAN" />
+                    <uc:OcrTextInfo Region="502, 276, 4, 6" Text="S" />
+                    <uc:OcrTextInfo Region="528, 277, 4, 4" Text="U" />
+                    <uc:OcrTextInfo Region="552, 277, 8, 4" Text="RA" />
+                    <uc:OcrTextInfo Region="582, 277, 4, 4" Text="U" />
+                    <uc:OcrTextInfo Region="606, 277, 8, 4" Text="RA" />
+                    <uc:OcrTextInfo Region="636, 277, 4, 4" Text="U" />
+                    <uc:OcrTextInfo Region="661, 276, 8, 6" Text="RA" />
+                    <uc:OcrTextInfo Region="690, 277, 4, 5" Text="C" />
+                    <uc:OcrTextInfo Region="712, 276, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="744, 277, 4, 4" Text="U" />
+                    <uc:OcrTextInfo Region="769, 276, 8, 5" Text="RA" />
+                    <uc:OcrTextInfo Region="798, 277, 4, 4" Text="U" />
+                    <uc:OcrTextInfo Region="824, 277, 8, 5" Text="RA" />
+                    <uc:OcrTextInfo Region="396, 288, 6, 6" Text="11" />
+                    <uc:OcrTextInfo Region="429, 288, 37, 6" Text="312321205011" />
+                    <uc:OcrTextInfo Region="474, 288, 38, 6" Text="AISHWARYAB" />
+                    <uc:OcrTextInfo Region="527, 288, 4, 5" Text="A" />
+                    <uc:OcrTextInfo Region="549, 288, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="580, 288, 7, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="604, 288, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="635, 288, 5, 5" Text="A" />
+                    <uc:OcrTextInfo Region="658, 288, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="690, 288, 4, 4" Text="A" />
+                    <uc:OcrTextInfo Region="712, 288, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="744, 288, 5, 5" Text="A" />
+                    <uc:OcrTextInfo Region="766, 288, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="797, 288, 7, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="820, 288, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="396, 299, 7, 6" Text="12" />
+                    <uc:OcrTextInfo Region="429, 299, 38, 6" Text="312321205013" />
+                    <uc:OcrTextInfo Region="474, 299, 38, 6" Text="AISHWARYAN" />
+                    <uc:OcrTextInfo Region="526, 300, 7, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="549, 299, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="581, 299, 4, 5" Text="U" />
+                    <uc:OcrTextInfo Region="606, 299, 8, 6" Text="RA" />
+                    <uc:OcrTextInfo Region="634, 300, 7, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="658, 299, 15, 5" Text="PASS" />
+                    <uc:OcrTextInfo Region="688, 300, 7, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="712, 299, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="744, 300, 5, 4" Text="A" />
+                    <uc:OcrTextInfo Region="766, 299, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="797, 300, 7, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="820, 299, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="396, 310, 6, 6" Text="13" />
+                    <uc:OcrTextInfo Region="430, 310, 36, 6" Text="312321205014" />
+                    <uc:OcrTextInfo Region="474, 310, 20, 6" Text="AKASH" />
+                    <uc:OcrTextInfo Region="495, 310, 10, 5" Text="RAJ" />
+                    <uc:OcrTextInfo Region="506, 311, 5, 5" Text="R" />
+                    <uc:OcrTextInfo Region="526, 311, 7, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="549, 310, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="581, 311, 4, 4" Text="U" />
+                    <uc:OcrTextInfo Region="606, 310, 8, 6" Text="RA" />
+                    <uc:OcrTextInfo Region="636, 311, 4, 4" Text="B" />
+                    <uc:OcrTextInfo Region="658, 310, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="688, 311, 7, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="712, 310, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="742, 311, 7, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="766, 310, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="796, 311, 8, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="820, 310, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="396, 322, 7, 5" Text="14" />
+                    <uc:OcrTextInfo Region="429, 322, 38, 6" Text="312321205015" />
+                    <uc:OcrTextInfo Region="471, 322, 16, 6" Text="ALDO" />
+                    <uc:OcrTextInfo Region="488, 322, 21, 6" Text="XAVIER" />
+                    <uc:OcrTextInfo Region="510, 322, 4, 6" Text="O" />
+                    <uc:OcrTextInfo Region="527, 322, 4, 5" Text="A" />
+                    <uc:OcrTextInfo Region="549, 322, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="580, 322, 7, 4" Text="B+" />
+                    <uc:OcrTextInfo Region="603, 322, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="635, 322, 5, 5" Text="A" />
+                    <uc:OcrTextInfo Region="658, 322, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="690, 322, 5, 5" Text="A" />
+                    <uc:OcrTextInfo Region="712, 322, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="744, 322, 5, 5" Text="A" />
+                    <uc:OcrTextInfo Region="766, 322, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="798, 322, 5, 6" Text="A" />
+                    <uc:OcrTextInfo Region="820, 322, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="396, 333, 7, 6" Text="15" />
+                    <uc:OcrTextInfo Region="429, 333, 38, 6" Text="312321205016" />
+                    <uc:OcrTextInfo Region="482, 333, 18, 6" Text="ANISH" />
+                    <uc:OcrTextInfo Region="500, 333, 4, 5" Text="S" />
+                    <uc:OcrTextInfo Region="527, 334, 4, 5" Text="A" />
+                    <uc:OcrTextInfo Region="549, 333, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="580, 334, 7, 4" Text="Be" />
+                    <uc:OcrTextInfo Region="604, 333, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="635, 334, 5, 4" Text="A" />
+                    <uc:OcrTextInfo Region="658, 333, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="688, 334, 8, 4" Text="A+" />
+                    <uc:OcrTextInfo Region="712, 333, 15, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="742, 334, 8, 4" Text="Ae" />
+                    <uc:OcrTextInfo Region="766, 333, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="798, 333, 5, 6" Text="A" />
+                    <uc:OcrTextInfo Region="820, 333, 14, 6" Text="PASS" />
+                    <uc:OcrTextInfo Region="486, 359, 17, 6" Text="'PASS'" />
+                    <uc:OcrTextInfo Region="506, 360, 3, 5" Text="-" />
+                    <uc:OcrTextInfo Region="511, 359, 15, 6" Text="Pass." />
+                    <uc:OcrTextInfo Region="530, 359, 10, 5" Text="RRA'" />
+                    <uc:OcrTextInfo Region="542, 360, 3, 5" Text="-" />
+                    <uc:OcrTextInfo Region="548, 359, 36, 7" Text="Reappearance" />
+                    <uc:OcrTextInfo Region="586, 359, 19, 6" Text="needed" />
+                    <uc:OcrTextInfo Region="605, 360, 5, 5" Text="to" />
+                    <uc:OcrTextInfo Region="611, 360, 13, 6" Text="pass" />
+                    <uc:OcrTextInfo Region="629, 359, 10, 5" Text="&quot;AB&quot;" />
+                    <uc:OcrTextInfo Region="642, 360, 3, 5" Text="-" />
+                    <uc:OcrTextInfo Region="647, 359, 21, 6" Text="Absent," />
+                    <uc:OcrTextInfo Region="671, 359, 10, 5" Text="'NR" />
+                    <uc:OcrTextInfo Region="684, 360, 3, 4" Text="." />
+                    <uc:OcrTextInfo Region="690, 359, 9, 6" Text="Not" />
+                    <uc:OcrTextInfo Region="700, 359, 28, 6" Text="Registered." />
+                    <uc:OcrTextInfo Region="413, 385, 44, 6" Text="Date:21-Jan-2023" />
+                    <uc:OcrTextInfo Region="527, 385, 24, 6" Text="Chairman" />
+                    <uc:OcrTextInfo Region="552, 385, 18, 6" Text="Central" />
+                    <uc:OcrTextInfo Region="572, 385, 22, 6" Text="Valuation" />
+                    <uc:OcrTextInfo Region="595, 385, 16, 5" Text="Board" />
+                    <uc:OcrTextInfo Region="670, 386, 24, 5" Text="Controller" />
+                    <uc:OcrTextInfo Region="696, 386, 6, 5" Text="of" />
+                    <uc:OcrTextInfo Region="702, 386, 33, 5" Text="Examinatlions" />
+                    <uc:OcrTextInfo Region="784, 385, 30, 6" Text="Chairperson" />
+                    <uc:OcrTextInfo Region="420, 496, 8, 4" Text="00" />
+                    <uc:OcrTextInfo Region="509, 492, 11, 8" Text="St." />
+                    <uc:OcrTextInfo Region="521, 492, 35, 9" Text="Joseph's" />
+                    <uc:OcrTextInfo Region="558, 492, 29, 9" Text="College" />
+                    <uc:OcrTextInfo Region="588, 492, 8, 7" Text="of" />
+                    <uc:OcrTextInfo Region="598, 492, 46, 9" Text="Engineering" />
+                    <uc:OcrTextInfo Region="646, 492, 4, 8" Text="(" />
+                    <uc:OcrTextInfo Region="650, 492, 12, 7" Text="An" />
+                    <uc:OcrTextInfo Region="662, 492, 50, 7" Text="Autonomous" />
+                    <uc:OcrTextInfo Region="714, 492, 42, 8" Text="Institution)" />
+                    <uc:OcrTextInfo Region="420, 501, 8, 6" Text="1oa" />
+                    <uc:OcrTextInfo Region="458, 510, 36, 6" Text="REGULATION" />
+                    <uc:OcrTextInfo Region="494, 510, 18, 6" Text="NAME:" />
+                    <uc:OcrTextInfo Region="514, 510, 18, 6" Text="R-2021" />
+                    <uc:OcrTextInfo Region="569, 510, 22, 6" Text="Program:" />
+                    <uc:OcrTextInfo Region="593, 510, 19, 6" Text="B.Tech." />
+                    <uc:OcrTextInfo Region="613, 510, 28, 5" Text="Information" />
+                    <uc:OcrTextInfo Region="642, 510, 28, 7" Text="Technology" />
+                    <uc:OcrTextInfo Region="704, 510, 24, 6" Text="Nov-2022" />
+                    <uc:OcrTextInfo Region="730, 510, 31, 6" Text="SEMESTER" />
+                    <uc:OcrTextInfo Region="762, 510, 38, 6" Text="EXAMINATION" />
+                    <uc:OcrTextInfo Region="420, 519, 12, 5" Text="Plox" />
+                    <uc:OcrTextInfo Region="432, 519, 6, 4" Text="T" />
+                    <uc:OcrTextInfo Region="546, 532, 20, 6" Text="CS1301" />
+                    <uc:OcrTextInfo Region="597, 532, 21, 6" Text="MA1351" />
+                    <uc:OcrTextInfo Region="650, 532, 20, 6" Text="CS1302" />
+                    <uc:OcrTextInfo Region="702, 532, 21, 6" Text="CS1304" />
+                    <uc:OcrTextInfo Region="754, 532, 20, 6" Text="CS1305" />
+                    <uc:OcrTextInfo Region="808, 532, 17, 6" Text="IT1301" />
+                    <uc:OcrTextInfo Region="530, 544, 15, 6" Text="Digital" />
+                    <uc:OcrTextInfo Region="547, 544, 24, 6" Text="Principles" />
+                    <uc:OcrTextInfo Region="572, 544, 10, 5" Text="and" />
+                    <uc:OcrTextInfo Region="590, 546, 26, 6" Text="Probablity" />
+                    <uc:OcrTextInfo Region="616, 546, 10, 6" Text="and" />
+                    <uc:OcrTextInfo Region="700, 547, 24, 6" Text="Computer" />
+                    <uc:OcrTextInfo Region="754, 546, 22, 5" Text="Soltware" />
+                    <uc:OcrTextInfo Region="391, 550, 14, 6" Text="S.No." />
+                    <uc:OcrTextInfo Region="438, 550, 20, 6" Text="Reg.No." />
+                    <uc:OcrTextInfo Region="492, 550, 15, 6" Text="Name" />
+                    <uc:OcrTextInfo Region="534, 550, 14, 6" Text="Logic" />
+                    <uc:OcrTextInfo Region="549, 550, 24, 6" Text="Design(La" />
+                    <uc:OcrTextInfo Region="641, 550, 12, 6" Text="Data" />
+                    <uc:OcrTextInfo Region="654, 550, 26, 6" Text="Structures" />
+                    <uc:OcrTextInfo Region="793, 550, 12, 6" Text="Java" />
+                    <uc:OcrTextInfo Region="806, 550, 33, 6" Text="Programming" />
+                    <uc:OcrTextInfo Region="542, 556, 26, 6" Text="Integrated)" />
+                    <uc:OcrTextInfo Region="597, 553, 22, 4" Text="Stalistios" />
+                    <uc:OcrTextInfo Region="697, 553, 30, 4" Text="Architecture" />
+                    <uc:OcrTextInfo Region="750, 553, 30, 6" Text="Engineering" />
+                  </scg:List>
+                </uc:CVCache.OcrTexts>
+              </uc:CVCache>
+              <uc:CVCache CvUiElements="{x:Null}" OcrTexts="{x:Null}" DataSent="False" DisplayName="2" Id="488256c6-d758-4d38-a1d6-0e8b8b5997c7" />
+            </scg:List>
+          </uc:CvCacheContainer.Caches>
+        </uc:CvCacheContainer>
+      </p:CVScope.DesignTimeCacheContainer>
+      <p:CVScope.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+          <p1:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25.333333333333332" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Image="[Image]" Language="en" Profile="Screen" Scale="1" Timeout="100000" />
+        </ActivityFunc>
+      </p:CVScope.OCREngine>
+      <p:CVScope.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="9a82141a-bdde-49ee-b2fe-75a8f1b2e4dc" InformativeScreenshot="aa45a911c27b356d34c9c2ca3ae9b706" WaitForReady="INTERACTIVE">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+        </ui:Target>
+      </p:CVScope.Target>
+      <p:CVScope.UseLocalServer>
+        <InArgument x:TypeArguments="x:Boolean" />
+      </p:CVScope.UseLocalServer>
+    </p:CVScope>
+  </Sequence>
+</Activity>
